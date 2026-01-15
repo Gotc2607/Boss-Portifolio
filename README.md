@@ -1,2 +1,2 @@
 # Boss-Portifolio
-POrtifolio de traino feito no acampament da empresa junior Orc'estra
+POrtifolio de treino feito no acampamento da empresa junior Orc'estra
