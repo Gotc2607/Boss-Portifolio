@@ -196,3 +196,55 @@ footer {
   color: var(--cor-fundo);
   margin-top: 50px;
 }
+
+/* Responsividade */
+
+@media (max-width: 768px){
+
+  header {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  nav ul{
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .sobre-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .sobre-heroi{
+    text-align: center;
+  }
+
+  .foto-heroi img{
+    width: 150px;
+    height: 150px;
+  }
+
+  #painel-heroi ul {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 480px){
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  section {
+    padding: 20px 15px;
+  }
+
+  .botao-primario{
+    width: 100%;
+    margin: 10px 0;
+  }
+
+}
