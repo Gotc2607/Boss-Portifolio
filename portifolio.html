@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio do Herói - Giovani Coelho</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="perfil">
+      <h1>Giovani Coelho</h1>
+      <p>Desenvolvedor em Treinamento</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#painel-heroi">Painel do Herói</a></li>
+      </ul>
+    </nav>
+    
+  </header>
+
+  <main>
+    <section id="sobre">
+        <div class="sobre-container">
+            <div class="foto-heroi">
+                <img src="img/imagem-avatar.jpg" alt="Foto do herói">
+            </div>
+            <div class="sobre-heroi">
+                <h2>Sobre Mim</h2>
+                <p>Olá! Meu nome é Giovani Coelho. Estou começando minha jornada no desenvolvimento web.</p>
+                <button id="btn-oraculo" class="botao-primario">Conselho do Oráculo</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="painel-heroi">
+      <h2>Painel do Herói</h2>
+      <p>Ficha dinâmica com HTML + CSS + JavaScript.</p>
+      <!-- Exemplo de estrutura estática, que será animada no módulo de JS -->
+      <ul>
+        <li>Nome: <span id="hero-nome">Giovani Coelho</span></li>
+        <li>Classe: <span id="hero-classe">Novato</span></li>
+        <li>Nível: <span id="hero-nivel">1</span></li>
+        <li>XP: <span id="hero-xp">0</span></li>
+      </ul>
+        <button id="btn-xp" class="botao-primario" style="margin-top: 15px;">Ganhar XP</button>
+    </section>
+
+    <section id="projetos">
+        <h2>Meus Projetos</h2>
+        <div class="lista-projetos" id="container-projetos">
+            <article class="card-projeto">
+                <h3>Meu Primeiro Site</h3>
+                <p>Página criada no treinamento de HTML</p>
+                <a href="index.html" class="botao-primario">Ver Projeto</a>
+            </article>
+        </div>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <form action="#" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" novalidate >
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" novalidate >
+        <br><br>
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="30"></textarea>
+        <br><br>
+        <button type="submit" class="botao-primario">Enviar</button>
+        <p id="contato-status" style="margin-top: 10px; font-weight: bold;"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Giovani Coelho. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
